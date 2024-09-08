@@ -1,0 +1,16 @@
+.status-busy {
+  color: red !important;
+}
+
+.status-available {
+  color: green !important;
+}
+
+/* Alternatively, increase specificity */
+table tbody#employeeTableBody .status-busy {
+  color: red;
+}
+
+table tbody#employeeTableBody .status-available {
+  color: green;
+}
