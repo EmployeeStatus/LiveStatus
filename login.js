@@ -99,7 +99,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         get(employeeRef).then((snapshot) => {
           if (snapshot.exists()) {
             console.log("Employee data:", snapshot.val());
-            window.location.href = "employeestatus.html";
+            window.location.href = "Employeestatus.html";
           } else {
             console.log("No employee data found.");
             alert("No employee data found." + accountCount);
