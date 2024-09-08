@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Employee Status Update</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet"> <!-- Link to the external CSS file -->
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Employee Portal</a>
+        <div class="d-flex ms-auto">
+          <button id="logoutButton" class="btn btn-success">Log Out</button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-5">
+      <h2>Update Status</h2>
+      <form id="statusUpdateForm">
+        <div class="mb-3">
+          <label for="employeeName" class="form-label">Name</label>
+          <input type="text" class="form-control" id="employeeName" readonly>
+        </div>
+        <div class="mb-3">
+          <label for="employeeStatus" class="form-label">Status</label>
+          <div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="statusOptions" id="statusBusy" value="Busy" required>
+              <label class="form-check-label" for="statusBusy">Busy</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="statusOptions" id="statusAvailable" value="Available" required>
+              <label class="form-check-label" for="statusAvailable">Available</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="statusOptions" id="statusLeave" value="Leave" required>
+              <label class="form-check-label" for="statusLeave">Leave</label>
+            </div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="employeeRemark" class="form-label">Remark</label>
+          <input type="text" class="form-control" id="employeeRemark" placeholder="Describe your work in short" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Update Status</button>
+      </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script type="module" src="Employee.js"></script> <!-- Link to the external JS file -->
+
+   
+  </body>
+</html>
